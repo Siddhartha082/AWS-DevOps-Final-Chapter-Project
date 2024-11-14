@@ -30,8 +30,8 @@ This project demonstrates deploying an Amazon Prime clone using a set of DevOps 
 ## Infrastructure Setup Using Terraform
 1. **Clone the Repository** (Open Command Prompt & run below):
    ```bash
-   git clone https://github.com/pandacloud1/DevopsProject2.git
-   cd DevopsProject2
+   git clone https://github.com/Siddhartha082/AWS-DevOps-Final-Chapter-Project
+   cd AWS-DevOps-Final-Chapter-Project
    code .   # this command will open VS code in backend
    ```
 2. **Initialize and Apply Terraform**:
@@ -89,7 +89,7 @@ pipeline {
     
     parameters {
         string(name: 'ECR_REPO_NAME', defaultValue: 'amazon-prime', description: 'Enter repository name')
-        string(name: 'AWS_ACCOUNT_ID', defaultValue: '123456789012', description: 'Enter AWS Account ID') // Added missing quote
+        string(name: 'AWS_ACCOUNT_ID', defaultValue: '851725192411', description: 'Enter AWS Account ID') // Added missing quote
     }
     
     tools {
@@ -104,7 +104,7 @@ pipeline {
     stages {
         stage('1. Git Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/pandacloud1/DevopsProject2.git'
+                git branch: 'main', url: 'https://github.com/Siddhartha082/AWS-DevOps-Final-Chapter-Project'
             }
         }
         
@@ -346,6 +346,6 @@ pipeline {
 ```
 
 ## Additional Information
-For further details, refer to the word document containing a complete write-up of the project.
+For further details, refer to the PDF document containing a complete write-up of the project.
 
 ---
