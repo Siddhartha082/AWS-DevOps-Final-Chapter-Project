@@ -77,6 +77,10 @@ This will create the EC2 instance, security groups, and install necessary tools 
 7. **Push to AWS ECR**: Tags and pushes the Docker image to ECR.
 8. **Image Cleanup**: Deletes images from the Jenkins server to save space.
 
+# Deployment Sages
+![image](https://github.com/user-attachments/assets/5399d7b1-64a4-414f-9197-6b43fcf66ac6)
+
+
 ### Running Jenkins Pipeline
 Create and run the build pipeline in Jenkins. The pipeline will build, analyze, and push the project Docker image to ECR.
 Create a Jenkins pipeline by adding the following script:
